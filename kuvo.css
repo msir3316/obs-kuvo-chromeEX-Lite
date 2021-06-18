@@ -1,0 +1,39 @@
+.custom-track-info{
+    display: block;
+    color:white;
+    margin: 10%, 0;
+/*    overflow: hidden;*/
+}
+.custom-track-info div#scroll-on{
+    display: inline-block;
+    padding-left: 100%;
+    white-space: nowrap;
+    animation: scrollAnime 15s linear infinite;
+}
+
+.custom-track-info div#pre-scroll{
+    display: inline-block;
+    white-space: pre;
+}
+
+.custom-track-info div{
+    display: block;
+    white-space: pre;
+}
+
+@keyframes scrollAnime{
+    0% { transform: translateX(0)}
+  100% { transform: translateX(-100%)}
+}
+
+.custom-title{
+    font-size:xx-large;
+    color:white;
+    padding-top:10%;
+    line-height: 1.2em;
+}
+.custom-artist{
+    font-size:x-large;
+    color:white;
+    padding-bottom:10%;
+}

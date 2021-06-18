@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <p>
+    オプション
+    <ul>
+        <li>どれくらいの幅以上でスクロールさせるか
+            <ul>
+                <li>タイトル<input id="customTitleLimitLength" type="number">
+                <li>アーティスト<input id="customArtistLimitLength" type="number">
+            </ul>
+        <li>ページ内容の変化を検知して完全自動で反映 ※利用時は一度プレイリストページをリロードしてください
+            <input type="checkbox" id="observePage"/>
+    </ul>
+    </p>
+
+    <p>
+    <button id="save">保存</button>
+    </p>
+        
+    <div id="status"></div>
+    <script src="option.js"></script>
+  </body>
+</html>
