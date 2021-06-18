@@ -77,9 +77,10 @@ function toScroll(){
 
 function observeMutation(){
     //DOMの変化を監視して完全自動で反映させる
-    const target = document.getElementsByClassName('.tracklist-area')[0];
+    const target = document.querySelector(".tracklist-area");
     const observer = new MutationObserver((mutations) => {
         mutations.forEach((mutation) => {
+            console.log("observe!");
             let track = getMusicInfoDirectly();
             showCustomTrack(track);
         });
