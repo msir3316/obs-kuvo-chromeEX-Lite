@@ -106,10 +106,13 @@ function getMusicInfoDirectly(){
     return musicInfo;
 };
 
-window.addEventListener("load", customTrack);
-
-chrome.storage.local.get(["observePage"],function(items){
-    if(items.observePage){
-        observeMutation();
-    }
+window.addEventListener("load", function(){
+    customTrack();
+    chrome.storage.local.get(["observePage"],function(items){
+        if(items.observePage){
+            observeMutation();
+        }
+    });
 });
+
+
