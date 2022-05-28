@@ -1,11 +1,10 @@
 {
     "name": "OBS-KUVO-ChromeEX-Lite",
-    "version": "1.00",
+    "version": "1.1",
     "description": "KUVOから再生中の曲情報を整形し、OBSで表示しやすくするChrome拡張",
     "permissions": ["tabs","activeTab","declarativeContent", "storage"],
     "background": {
-      "scripts": ["background.js"],
-      "persistent": false
+        "service_worker": "background.js"
     },
    "icons": {
       "48": "icon/icon_48.png"
@@ -19,5 +18,5 @@
      }
    ],
     "options_page":"option.html",
-    "manifest_version": 2
+    "manifest_version": 3
 }
