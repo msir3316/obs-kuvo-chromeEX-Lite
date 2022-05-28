@@ -3,6 +3,7 @@
     color:white;
     margin: 10%, 0;
 /*    overflow: hidden;*/
+    animation: fadeIn 0.2s ease 0.3s 1 normal;
 }
 .custom-track-info div#scroll-on{
     display: inline-block;
